@@ -1,0 +1,21 @@
+demonstrates how to add spring-boot project as 
+dependency to another spring-boot application. 
+
+Use maven as 
+Attaching 2 projects. 
+I used spring version 2.1.3.RELEASE. 
+
+How to run:
+cd TestApp2
+mvn clean install -U
+cd ../TestApp1
+mvn clean install  
+mvn spring-boot:run
+
+
+URLs to test: 
+http://localhost:8080/api/test1/
+http://localhost:8080/api/test2/
+http://localhost:8080/api/test1/obj/1/
+http://localhost:8080/api/test2/obj/1/
+
